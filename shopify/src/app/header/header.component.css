@@ -1,0 +1,68 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Navigation bar */
+nav {
+  background-color: #4caf50;
+  width: 60px; /* Collapsed width */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav.nav-open {
+  width: 250px; /* Expanded width */
+}
+
+/* Search input */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  width: calc(100% - 20px); /* Adjust width to leave space for padding */
+  border: none;
+  border-radius: 4px;
+  background-color: #3e8e41;
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+#search-input::placeholder {
+  color: #bdc3c7;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+
+
